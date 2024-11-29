@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(45deg, red, blue);
+  font-family: Orbitron, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.game-container {
+  width: 600px;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+#playerRock {
+  color: grey;
+  cursor: pointer;
+}
+
+#playerPaper {
+  color: white;
+  cursor: pointer;
+}
+
+#playerScissors {
+  color: silver;
+  cursor: pointer;
+}
+
+#playerLizard {
+  color: rgb(0, 255, 17);
+  cursor: pointer;
+}
+
+#playerSpock {
+  color: rgb(255, 208, 0);
+  cursor: pointer;
+}
+
+#computerRock {
+  color: grey;
+  cursor: crosshair;
+}
+
+#computerPaper {
+  color: white;
+  cursor: crosshair;
+}
+
+#computerScissors {
+  color: silver;
+  cursor: crosshair;
+}
+
+#computerLizard {
+  color: rgb(0, 255, 17);
+  cursor: crosshair;
+}
+
+#computerSpock {
+  color: rgb(255, 208, 0);
+  cursor: crosshair;
+}
+
+.selected {
+  color: black !important;
+}
+
+
+.header {
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  color: rgb(10, 0, 89);
+  font-size: 25px;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: rgb(0, 0, 88);
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 45px;
+  User-select: none;
+}
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgba(32, 32, 31, 0.759);
+  margin-left: 50px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    height: 580px;
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
